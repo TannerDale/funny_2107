@@ -1,4 +1,4 @@
-requrie './lib/joke'
+require './lib/joke'
 
 RSpec.describe Joke do
   context 'initialize' do
