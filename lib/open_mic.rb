@@ -15,10 +15,14 @@ class OpenMic
   end
 
   def repeated_jokes?
-    jokes = @performers.map { |perfomer|
-      perfomer.jokes
-    }.flatten
+    jokes = all_jokes
 
     jokes != jokes.uniq
+  end
+
+  def all_jokes
+    @performers.map { |perfomer|
+      perfomer.jokes
+    }.flatten
   end
 end
