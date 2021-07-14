@@ -17,7 +17,7 @@ class OpenMic
   def repeated_jokes?
     jokes = all_jokes
 
-    jokes.count != jokes.uniq.count
+    jokes != jokes.uniq
   end
 
   def all_jokes
