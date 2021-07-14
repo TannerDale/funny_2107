@@ -60,11 +60,7 @@ RSpec.describe OpenMic do
     end
 
     it 'knows all jokes' do
-      user_2.learn(joke_1)
-      user_2.learn(joke_2)
-      user_1.learn(joke_1)
-
-      expect(open_mic.all_jokes).to eq([joke_1, joke_2, joke_1])
+      expect(open_mic.all_jokes).to eq([joke_1, joke_1, joke_2])
     end
   end
 end
