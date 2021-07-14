@@ -34,7 +34,8 @@ RSpec.describe User do
     end
   end
 
-  context 'finding jokes' do
+  # iteration 3
+  context 'telling and finding jokes' do
     user_1 = User.new("Sal")
     joke_1 = Joke.new(22, "Why did the strawberry cross the road?", "Because his mother was in a jam.")
     joke_2 = Joke.new(13, "How do you keep a lion from charging?", "Take away its credit cards.")
